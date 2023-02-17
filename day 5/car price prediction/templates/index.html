@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>
+        
+        </title>
+    </head>
+    
+    <body>
+        <div style="text-align:center;">
+            <h1>
+                Car price prediction
+            </h1>
+            
+            <form action="predict" method="post">
+                <input name="km" type="number" placeholder="Enter kilomerters" min="1" max="1000000"  required/>
+                <br> <br> 
+                <input name="age" type="number" placeholder="Enter car age" min="0" max="100"  required/>
+                <br> <br>
+                <input name="op" type="number" placeholder="Enter original price" min="10000" max="10000000" required/>
+                <br> <br> 
+                <select name="fuel_type">
+                    <option value="Select">Select Fuel</option> 
+                    <option value="Petrol">Petrol</option> 
+                    <option value="Diesel">Diesel</option> 
+                    <option value="CNG">CNG</option>                     
+                </select>
+                <br> <br> 
+                <select name="transmission">
+                    <option value="Select">Select transmission</option> 
+                    <option value="Automatic">Automatic</option> 
+                    <option value="Manual">Manual</option>                     
+                </select>
+                
+               <br> <br><button>Predict Price </button>
+            
+                <br><br>
+                {{prediction_value}}
+            </form>
+        </div>
+    </body>    
+</html>
+
+
+
+
+
